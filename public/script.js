@@ -21,16 +21,14 @@ function generateData(item) {
 
   return `
   <div class=" relative flex flex-col w-6 gap-2 items-center mx-auto text-xs">
-  <span id="bar" class="${
+  <span class="${
     data == true ? "bg-Cyan" : "bg-Soft-red"
   }  w-6 cursor-pointer rounded-sm peer hover:opacity-70 transition-opacity sm:w-10" style="height: ${
     item.amount * 2.5
   }px"></span>
-  <span
-    id="amt"
-    class="absolute -top-7 flex bg-Dark-brown text-Very-pale-orange p-1 w-fit rounded-sm opacity-0 peer-hover:opacity-100 transition-opacity delay-200"
+  <span class="absolute -top-7 flex bg-Dark-brown text-Very-pale-orange p-1 w-fit rounded-sm opacity-0 peer-hover:opacity-100 transition-opacity delay-200"
     >${currency}</span>
-  <span id="day" class="peer text-Medium-brown sm:text-base">${item.day}</span>
+  <span class="peer text-Medium-brown sm:text-base">${item.day}</span>
 </div>
 `;
 }
