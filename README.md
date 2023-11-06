@@ -33,7 +33,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [live site](https://expenses-chart-gilt.vercel.app/)
+- Live Site URL: [demo here ](https://expenses-chart-gilt.vercel.app/)
 
 ## My process
 
