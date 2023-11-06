@@ -28,7 +28,7 @@ function generateData(item) {
   }px"></span>
   <span
     id="amt"
-    class="absolute -top-7 flex bg-Dark-brown text-Very-pale-orange p-1 w-fit rounded-md text-[10px] opacity-0 peer-hover:opacity-100 transition-opacity delay-200"
+    class="absolute -top-7 flex bg-Dark-brown text-Very-pale-orange p-1 w-fit rounded-sm opacity-0 peer-hover:opacity-100 transition-opacity delay-200"
     >${currency}</span>
   <span id="day" class="peer text-Medium-brown sm:text-base">${item.day}</span>
 </div>
