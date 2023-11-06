@@ -2,7 +2,7 @@ const myChart = document.getElementById("mychart");
 
 // fetch data
 function fetchJsonData() {
-  fetch("/data.json")
+  fetch("../data.json")
     .then((Response) => {
       return Response.json();
     })
