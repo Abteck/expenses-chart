@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./script.js" defer></script>
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Expenses chart component</title>
+  </head>
+  <body class="font-Dm-sans text-lg">
+    <header>
+      <h1 class="sr-only">Expenses chart component</h1>
+    </header>
+    <main
+      class="min-h-screen w-full flex flex-col justify-center items-center p-3 bg-Cream gap-5"
+    >
+      <section
+        id="my-balance"
+        class="w-full flex justify-between items-center bg-Soft-red px-6 py-7 rounded-lg text-Very-pale-orange md:max-w-md transition-all"
+      >
+        <div class="flex flex-col gap-1">
+          <h2>My balance</h2>
+          <p class="text-2xl font-bold sm:text-3xl">$921.48</p>
+        </div>
+        <div>
+          <img
+            src="./images/logo.svg"
+            alt="image-circle"
+            class="w-16 sm:w-20"
+          />
+        </div>
+      </section>
+
+      <section
+        id="expense-graph"
+        class="w-full flex flex-col bg-Very-pale-orange rounded-lg px-3 py-8 gap-5 md:max-w-md transition-all"
+      >
+        <h2 class="text-lg font-bold text-Dark-brown mb-8 sm:text-3xl">
+          Spending - Last 7 days
+        </h2>
+
+        <!-- div for the bars -->
+        <div id="mychart" class="w-full grid grid-cols-7 items-end">
+          <!-- <div class="flex flex-col w-6 gap-2 items-center text-xs">
+            <span
+              id="amount"
+              class="bg-Dark-brown text-Very-pale-orange p-1 w-fit rounded-md text-[10px]"
+              >$34.52</span
+            >
+            <span id="bar" class="bg-Soft-red h-36 w-6 rounded-md"></span>
+            <span id="day" class="text-Medium-brown">mon</span>
+          </div> -->
+        </div>
+        <hr class="border border-Cream" />
+
+        <!-- div for total of the month -->
+        <div class="text-xs sm:text-sm">
+          <p class="text-Medium-brown">Total for this Month</p>
+          <div class="flex justify-between items-center">
+            <p id="total" class="text-lg text-Dark-brown font-bold sm:text-4xl">
+              $478.33
+            </p>
+            <div>
+              <p class="text-Dark-brown text-right font-bold sm:text-xl">
+                +2.4%
+              </p>
+              <p class="text-Medium-brown">From last month</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
